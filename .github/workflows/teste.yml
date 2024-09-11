@@ -1,0 +1,19 @@
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print name
+        run: echo "Teste $URL"
+             echo "Teste $SENHA"
+        
+    
+    
