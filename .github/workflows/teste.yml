@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Print name
+      - name: Print URL
         run: echo "Teste $URL"
-             echo "Teste $SENHA"
+      - name: Print Senha
+        run: echo "Teste ${{secrets.SENHA}}"
         
     
     
