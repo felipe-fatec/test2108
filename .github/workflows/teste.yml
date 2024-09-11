@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Print URL
-        run: echo "Teste $URL"
+        run: echo "Teste ${{ vars.URL }}"
       - name: Print Senha
         run: echo "Teste ${{secrets.SENHA}}"
         
